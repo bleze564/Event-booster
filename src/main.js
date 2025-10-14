@@ -1,19 +1,25 @@
+const formApi = document.querySelector('form');
+const divApi = document.querySelector('.api-main');
 
+formApi.addEventListener('submit', () => {
+  // 1.отримати значення інпуту
+  // 2.викликати функцію searcharticlesbyname як аргумент значення інпуту
+  
+});
 
-const baseUrl =''
-function searchArticlesByName() { 
+function searchEventsByName(queryFound) {
   return fetch(
-    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=eXb8ULUoq4HjIKYn2xDLaMMehZFueL04`
-  ).then((result) => result.json());
+    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=eXb8ULUoq4HjIKYn2xDLaMMehZFueL04&keyword=${queryFound}`
+  ).then(result => result.json());
 }
-// function createArticleMarkup (article) {
-//   return `
-//        <article>
-//         <img src="${article.images}" alt="">
-//         <h2>${article.name}</h2>
-//         <p>${article.dates}</p>
-//         <p>${article.description}</p>
-//      </article>
-// `;
-// }
-searchArticlesByName()
+
+function createEventMarkup(event) {
+  return `
+       <article>
+        <img src="${event.images}" alt="">
+        <h2>${event.name}</h2>
+        <p>${event.dates}</p>
+        <p>${event.place}</p>
+     </article>
+`;
+}
