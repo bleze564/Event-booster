@@ -3,19 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Event-booster</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="">
+      <div class="logo-preview">
+        <img class="logo" src="./img/logo.png" alt="" />
+        <h1 class="preview">FIND BEST EVENTS <br> AROUND THE WORLD</h1>
+      </div>
       <form>
-        <input type="text" class="form" name="query" />
-        <button type="submit"><img src="./img/search.png" alt="" /></button>
+        
+        <input type="text" class="form" name="query" value="Start searching"/>
+        <button class="search-btn" type="submit"><img src="./img/search.png" alt="" /></button>
+        <select name="country" id="" class="select-country" >select country</select>
       </form>
     </header>
-    <div class="api-main"></div>
+    <main>
+<div class="api-main"></div>
 
+    </main>
+    <footer class="">
+     <p class="footer-txt">© 2021 | All Rights Reserved | Developed with ♥ by GoIT Students</p>
+    </footer>
     <script type="module" src="main.js"></script>
   </body>
 </html>

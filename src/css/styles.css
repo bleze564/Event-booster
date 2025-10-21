@@ -1,24 +1,52 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+header {
+  background-image: url('/img/pic.png');
+}
+.preview {
+  color: #dc56c5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+.logo-preview {
+  display: flex;
+  justify-content: left;
+}
+.logo {
+}
+.form {
+  border-radius: 20px;
+  width: 270px;
+  height: 40px;
+  background-color: #ffffff33;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #939393;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+.select-country {
+  border-radius: 20px;
+  width: 270px;
+  height: 40px;
+  background-color: #ffffff33;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #939393;
+  font-weight: 400;
+  font-size: 16px;
+}
+main {
+  background-color: black;
+  background-image: url('/img/body.png');
+  height: 2000px;
+}
+.form:focus {
+  outline: none;
+}
+.select-country:focus {
+  outline: none;
+}
+.footer-txt{
+  font-family: 'Montserrat', sans-serif;
 }
