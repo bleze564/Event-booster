@@ -1,5 +1,11 @@
 header {
   background-image: url('/img/pic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top:30px ;
+  padding-bottom: 100px;
+  position: relative;
 }
 .preview {
   color: #dc56c5;
@@ -13,6 +19,9 @@ header {
   justify-content: left;
 }
 .logo {
+  position: absolute;
+  top:0;
+  left:0;
 }
 .form {
   border-radius: 20px;

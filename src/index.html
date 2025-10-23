@@ -12,27 +12,43 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event-booster</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="">
-      <div class="logo-preview">
-        <img class="logo" src="./img/logo.png" alt="" />
-        <h1 class="preview">FIND BEST EVENTS <br> AROUND THE WORLD</h1>
-      </div>
-      <form>
+      <div class="container">
         
-        <input type="text" class="form" name="query" value="Start searching"/>
-        <button class="search-btn" type="submit"><img src="./img/search.png" alt="" /></button>
-        <select name="country" id="" class="select-country" >select country</select>
-      </form>
+          <img class="logo" src="./img/logo.png" alt="" />
+          <h1 class="preview">
+            FIND BEST EVENTS <br />
+            AROUND THE WORLD
+          </h1>
+        <form>
+          <input
+            type="text"
+            class="form"
+            name="query"
+            value="Start searching"
+          />
+          <button class="search-btn" type="submit">
+            <img src="./img/search.png" alt="" />
+          </button>
+          <select name="country" id="" class="select-country">
+            select country
+          </select>
+        </form>
+      </div>
     </header>
     <main>
-<div class="api-main"></div>
-
+      <div class="container">
+        <div class="api-main"></div>
+      </div>
     </main>
     <footer class="">
-     <p class="footer-txt">© 2021 | All Rights Reserved | Developed with ♥ by GoIT Students</p>
+      <p class="footer-txt">
+        © 2021 | All Rights Reserved | Developed with ♥ by GoIT Students
+      </p>
     </footer>
     <script type="module" src="main.js"></script>
   </body>
