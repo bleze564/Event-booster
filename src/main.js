@@ -7,7 +7,7 @@ formApi.addEventListener('submit', ev => {
 
   // 2.викликати функцію searcharticlesbyname як аргумент значення інпуту
   searchEventsByName(searchValue).then(result => {
-    let markup = result._embedded.events.map(createEventMarkup);
+    let markup = result.embedded.events.map(createEventMarkup);
   });
 });
 
