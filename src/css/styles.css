@@ -70,6 +70,10 @@ main {
 }
 .footer-txt {
   font-family: 'Montserrat', sans-serif;
+  color: #939393;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
 }
 .event-card {
   width: 196px;
@@ -109,5 +113,8 @@ main {
 border-bottom-right-radius: 40px;
 border-top-left-radius: 40px;
 overflow:hidden;
-box-shadow: ;
+
+}
+footer{
+  background-color: black;
 }
