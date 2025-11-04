@@ -1,5 +1,5 @@
 import Pagination from 'tui-pagination';
-
+import 'tui-pagination/dist/tui-pagination.css';
 let page = 0;
 
 fetchEvents().then(result => {
@@ -20,7 +20,7 @@ formApi.addEventListener('submit', ev => {
 });
 function fetchEvents(page = '0') {
   return fetch(
-    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=eXb8ULUoq4HjIKYn2xDLaMMehZFueL04?page=${page}`
+    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=eXb8ULUoq4HjIKYn2xDLaMMehZFueL04&page=${page}`
   ).then(result => result.json());
 }
 
@@ -46,7 +46,7 @@ function createEventMarkup(event) {
 // пагінація
 
 const pagination = new Pagination(paginationContainer, {
-  totalItems: 20,
+  totalItems: 500,
   template: {
     page: '<a href="#" class="tui-page-btn">{{page}}p</a>',
     currentPage:
@@ -65,11 +65,11 @@ const pagination = new Pagination(paginationContainer, {
       '</a>',
   },
 });
-pagination.on('afterMove', function (eventData) {
-  fetchEvents(page).then(result => {
+pagination.on('afterMove', function (event) {
+  fetchEvents(event.page).then(result => {
     page += 1;
     let markup = result._embedded.events.map(createEventMarkup);
-    divApi.insertAdjacentHTML('beforeend', markup);
+    divApi.innerHTML = markup;
   });
-  alert('The current page is ' + eventData.page);
+  
 });
