@@ -98,8 +98,8 @@ header {
   }
 }
 main {
-  background-color: black;
-  background-image: url('/img/body.png');
+  /* background-color: black; */
+  /* background-image: url('/img/body.png'); */
   height: 2000px;
 
   @media screen and (max-width: 1200px) {
