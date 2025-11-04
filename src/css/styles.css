@@ -13,7 +13,16 @@ header {
   font-size: 50px;
   font-weight: 900;
   text-align: center;
-  padding-bottom: 52px ;
+  padding-bottom: 52px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    margin-top: 60px;
+  }
 }
 .logo-preview {
   display: flex;
@@ -23,10 +32,18 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
 }
 .form {
   border-radius: 20px;
-  width: 270px;
+  width: 250px;
   height: 40px;
   background-color: #ffffff33;
   border: 0;
@@ -35,14 +52,30 @@ header {
   font-weight: 400;
   font-size: 16px;
   margin-left: 280px;
+  padding-left: 20px;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
 }
-.search-btn{
+.search-btn {
+  position: relative;
+  left: -60px;
+  bottom: -4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+.search-btn:active {
+  color: #939393;
+}
 
-
-} 
-
-.search{
-    width: 18px;
+.search {
+  width: 18px;
   height: 18px;
 }
 .select-country {
@@ -56,11 +89,26 @@ header {
   font-weight: 400;
   font-size: 16px;
   margin-left: 30px;
+
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 100px;
+  }
 }
 main {
   background-color: black;
   background-image: url('/img/body.png');
   height: 2000px;
+
+  @media screen and (max-width: 1200px) {
+    height: 2582px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 2786px;
+  }
 }
 .form:focus {
   outline: none;
@@ -74,12 +122,29 @@ main {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    width: 252px;
+    margin-left: 140px;
+  }
 }
 .event-card {
   width: 196px;
   height: 312px;
-  margin-right: 100px;
-  
+  margin-right: 50px;
+  margin-left: 50px;
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 10px;
+    margin-left: 25px;
+    height: 242px;
+    margin-bottom: 20px;
+  }
 }
 .api-main {
   display: flex;
@@ -99,22 +164,26 @@ main {
   font-size: 16px;
   text-align: center;
 }
-.event-place{
+.event-place {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #FFFFFF;
-  text-align: center  ;
+  color: #ffffff;
+  text-align: center;
 }
-.event-img{
+.event-img {
+  @media screen and (max-width: 1200px) {
+  }
 
+  @media screen and (max-width: 768px) {
+    width: 190px;
+  }
 }
-.img-wrap{
-border-bottom-right-radius: 40px;
-border-top-left-radius: 40px;
-overflow:hidden;
-
+.img-wrap {
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  overflow: hidden;
 }
-footer{
+footer {
   background-color: black;
 }
